@@ -1,0 +1,374 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+.page__body {
+    font-family: 'Spectral', serif;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 5px;
+    color: #333333;
+}
+
+.front_p {
+    color: white;
+}
+
+/* --------- Dropdown menu fra w3schools ----- */
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  .dropdown_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  .dropdown_content a:hover {
+    background-color: #92d2fe;
+    color: white;
+}
+  
+  .dropdown:hover .dropdown_content {
+    display: block;
+}
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* --------- Header and navigaton --------- */
+
+.search_form {
+    display: none;
+}
+
+.mobile_search_form {
+    display: flex;
+}
+
+.mobile_search_input {
+    border: 1px solid black;
+    padding: 5px;
+    width: 98%;
+}
+
+.logo_style {
+    font-family: 'Silkscreen', cursive;
+    font-size: 2.2rem;
+    color: white;
+    text-decoration: none;
+    background-color: #92d2fe;
+}
+
+/* --------- front section ---------- */
+
+.front_site {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 75%;
+    margin-bottom: 50px;
+}
+.front_heading {
+    margin-top: 10px;
+}
+
+.front_heading_article {
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+.front_image_text {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.front_text {
+    padding-top: 10px;
+}
+
+/* --------- Editorial article ------ */
+
+.editorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 10px auto 30px;
+}
+
+.editorial_card {
+    text-align: center;
+    padding: 85px;
+    background-color: #0096e2;
+    max-width: 75%;
+}
+
+.editorial_heading {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.editorial_image {
+    max-width: 75%;
+}
+
+.editorial_link {
+    text-decoration: none;
+    color: #333333;
+}
+
+/* --------- Setup section --------- */
+
+.setup_section {
+    display: none;
+}
+
+/* --------- Article seciton ---------- */
+
+.article_section {
+    margin: 30px 0;
+    background-color: #0096e2;
+}
+
+.article_inner_section {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.article_inner_flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_heading {
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+.section_heading_white {
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.card:last-child .card_item:last-child {
+    color: blue;
+    border-bottom: none;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.card {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.card_item {
+    display: block;
+    text-decoration: none;
+    height: 4rem;
+    width: 100%;
+    color: white;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(34, 56, 178, 0.31);
+}
+
+.article_image_under {
+    max-width: 30rem;
+}
+.stjerner_image {
+    max-width: 10rem;
+}
+
+.article_image_front {
+    display: none;
+}
+
+/* --------- Footer section --------- */
+
+.page_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 17rem;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid black;
+    padding-top: 25px;
+}
+
+.some_image {
+    width: 32px;
+    margin-right: 16px;
+}
+
+.footer_card_heading {
+    margin-bottom: 7px;
+}
+
+.footer_card:first-child .footer_card_heading {
+    margin-bottom: 16px;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: #333333;
+}
+
+.footer_quicklinks {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (min-width: 1060px) {
+    
+    .search_form {
+        display: flex;
+    }
+
+    .search_field {
+        height: 27px;
+        margin-left: 25px;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        border: 1px solid rgba(51, 51, 51, 0.4);
+    }
+
+    .mobile_search_form  {
+        display: none;
+    }
+
+    .guide_section {
+        width: 50%;
+        flex-direction: row;
+        height: 7.5rem;
+        justify-content: space-around;
+    }
+
+    .editorial {
+        flex-direction: row;
+        max-width: 75rem;
+    }
+
+    .editorial_card {
+        width: 50%;
+        height: 20rem;
+    }
+
+    .editorial_image {
+        object-fit: cover;
+        width: 50%;
+        height: 20rem;
+    }
+
+    .setup_section {
+        display: block;
+        margin: 30px 0;
+        padding-bottom: 30px;
+    }
+
+    .setup_inner_section {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+    .setup_inner_flexbox {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .setup_image {
+        height: 175px;
+    }
+
+    .setup_section_newsletter {
+        text-align: center;
+        padding: 10px;
+        background-color: #0096e2;
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .newsletter_heading {
+        margin-bottom: 3px;
+        color: white;
+    }
+
+    .newsletter_link {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        height: 40px;
+        width: 140px;
+        text-decoration: none;
+        color: white;
+        margin-top: 7px;    
+    }
+
+    .article_image_front {
+        display: block;
+        max-width: 100%;
+        padding-right: 15px;
+        margin-top: 10px;
+    }
+
+    .article_inner_flexbox {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .article_section {
+        padding-bottom: 15px;
+    }
+
+    .card:first-child .card_item {
+        border-bottom: none;
+    }
+
+    .page_footer {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 10rem;
+    }
+    
+    .footer_card {
+        width: 13rem;
+    }
+}

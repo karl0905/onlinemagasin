@@ -1,0 +1,98 @@
+/* [ON MOBILE DEVICES] */
+
+.navigation__container {
+    background: #000000;
+    position: sticky;
+    top: 0;
+    background: white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(34, 56, 178, 0.21);
+    z-index: 1;
+}
+
+.mobileiconlabel {
+    display: inline-block;
+    /* color: #ffffff; */
+    /* background: #a02620; */
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+}
+
+.menuitem {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+}
+
+.active_menuitem {
+    background: #92d2fe;
+    color: white;
+}
+
+.cta_style {
+    color: #92d2fe;
+}
+
+/* Hide checkbox and menuitems until clicked */
+.menuitems__container,
+.mobileicon {
+    display: none;
+}
+
+/* Show menuitems when mobileicon-label is clicked */
+.navigation__container input:checked ~ .menuitems__container {
+    display: block;
+}
+
+/* Display company logo to the right */
+.companylogo {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    width: 155px;
+    margin-top: 2px;
+}
+
+
+/* Add rules [ON WIDE SCREENS] */
+
+@media screen and (min-width: 1060px) {
+
+
+    /* Hide Mobile icon and its label */
+    .mobileiconlabel,
+    .mobileicon {
+        display: none;
+    }
+
+    
+    /* Make menuitems flex horisontally (on a row) */
+    .menuitems__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+    .menuitem {
+        width: 130px;
+    }
+
+
+    .menuitem:hover {
+        background: #92d2fe;
+        color: white;
+    }
+    
+    /* Display company logo to the left */
+    .companylogo {
+        left: 10px;
+    }
+
+}

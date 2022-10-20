@@ -1,0 +1,173 @@
+<!-- Koden er bygget på batMAG, af Morten -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside | ComputerMagasinet</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/mobilemenu.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="page__body">
+    <header class="navigation__container">
+        <nav>
+            <!-- The mobile menu icon -->
+            <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+            <input type="checkbox" id="mobileicon" class="mobileicon">
+
+            <!-- Menu items og dropdown hover fra w3schools-->
+            <div class="menuitems__container">
+                <div class="dropdown">
+                    <button class="menuitem">Nyheder</button>
+                    <div class="dropdown_content">
+                        <a href="#">Tech news</a>
+                        <a href="#">Ny skærmteknologi</a>
+                        <a href="#">Fast charging, hvad er det og hvordan?</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="menuitem">Guides</button>
+                    <div class="dropdown_content">
+                        <a href="article_1.html">Hvordan vælger jeg ny computer?</a>
+                        <a href="article_2.html">Top 5 studiecomputere</a>
+                        <a href="article_3.html">Computer rabatter</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="menuitem">eSport</button>
+                    <div class="dropdown_content">
+                        <a href="#">CS:GO</a>
+                        <a href="#">League of Legends</a>
+                        <a href="#">Fornite</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="menuitem">Entertainment</button>
+                    <div class="dropdown_content">
+                        <a href="#">Youtube</a>
+                        <a href="#">Streaming</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="menuitem cta_style">Abonnér</a>
+                </div>
+
+                <form class="search_form">
+                    <input type="search" class="search_field" placeholder="Søg...">
+                    <button type="button"><img src="images/search.svg" alt="Search icon"></button>
+                </form>
+            </div>
+
+            <a href="index.html" class="companylogo logo_style">PC.MAG</a>
+        </nav>
+    </header>
+
+    <main>
+        <form class="mobile_search_form">
+            <input type="search" class="mobile_search_input" placeholder="Søg...">
+            <button type="button" class="searchbutton"><img src="images/search.svg" alt="search icon"></button>
+        </form>
+        <section class="front_site">
+            <img src="images/emil_3.png" alt="Emil Schmidt, studerende på EAAA" class="front_image">
+            <p class="front_image_text">(Emil Schmidt, studerende på EAAA, Foto af Karl Løvendahl)</p>
+            <h3 class="front_heading">Starter du på studie snart, eller er du bare på udkig efter ny computer, så læs
+                med!</h3>
+            <p class="front_text">Mangler du vejledning til at finde ny computer, leder du efter studierabat, eller vil
+                du læse om det nyeste teknologi fra computernes verden? Så er ComputerMagasinet dit bedste bud. Her
+                bringer vi de nyeste nyheder og trends, alt indenfor eSport og selvfølgelig flere guides og vejledning
+                til lige præcis dit computerkøb!</p>
+        </section>
+
+        <section class="editorial">
+            <div class="editorial_card">
+                <a href="article_1.html" class="editorial_link">
+                    <h1 class="editorial_heading">Computer opgradering? Ny bærbar?</h1>
+                    <p class="front_p">Skal du have købt ny computer, eller undrer du dig over hvad RAM egentlig står
+                        for, og hvad det er? I denne artikel dækker vi de vigtigste komponenter i computeren, så du kan
+                        finde den helt rigtige computer!</p>
+                </a>
+            </div>
+            <img src="images/pc_1.jpg" alt="Stationær computer med lys" class="editorial_image">
+        </section>
+
+        <section class="setup_section">
+            <div class="setup_inner_section">
+                <h2 class="section_heading">Ugens setup</h2>
+                <div class="setup_inner_flexbox">
+                    <img src="images/pc_setup_1.jpg" alt="stationær setup med 3 skærme lyst" class="setup_image">
+                    <img src="images/pc_1.jpg" alt="stationær setup med 3 skærme lyst" class="setup_image">
+                    <img src="images/pc_setup_3.jpg" alt="stationær setup med 3 skærme mørkt" class="setup_image">
+                    <div class="setup_section_newsletter">
+                        <h3 class="newsletter_heading">Nyhedsbrev</h3>
+                        <p class="front_p">Vil du følge med i det nyeste indenfor pc verdenen. Vil du vide når der er
+                            nye studierabatter? Tilmeld dig nu!</p>
+                        <a href="#" class="newsletter_link">Abonnér</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="article_section">
+            <div class="article_inner_section">
+                <h2 class="section_heading_white">Mest populære artikler</h2>
+                <div class="article_inner_flexbox">
+                    <div class="card">
+                        <img src="images/microsoft_surface.jpg" alt="Microsoft surface laptop computer with pen"
+                            class="article_image_front">
+                        <a href="article_2" class="card_item">Top 5 studiecomputere til multimediedesigner uddannelsen</a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card_item">Tech News</a>
+                        <a href="#" class="card_item">Ny skærmteknologi</a>
+                        <a href="#" class="card_item">Fast charging, hvad er det og hvordan?</a>
+                        <a href="article_1.html" class="card_item">Hvordan vælger jeg ny computer?</a>
+                    </div>
+
+                    <div class="card">
+                        <a href="article_2.html" class="card_item">Top 5 studiecomputere</a>
+                        <a href="article_3.html" class="card_item">Computer rabatter</a>
+                        <a href="#" class="card_item">League of Legends</a>
+                        <a href="articlegallery.html" class="card_item">Vis flere top-artikler &gt;</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <footer class="page_footer">
+        <div class="footer_card">
+            <h4 class="footer_card_heading">Følg os</h4>
+            <a href="#"><img src="images/Color/PNG/f_logo_RGB-Blue_144.png" alt="facebook icon" class="some_image"></a>
+            <a href="#"><img src="images/Twitter_SocialIcon_RoundedSquare/Twitter_Social_Icon_Rounded_Square_Color.png"
+                    alt="twitter icon" class="some_image"></a>
+            <a href="#"><img src="images/GlyphLogo_May2016_Onlinev2/glyph-logo_May2016.png" alt="instagram icon"
+                    class="some_image"></a>
+        </div>
+
+        <div class="footer_card">
+            <h4 class="footer_card_heading">Kontakt os</h4>
+            <address>
+                ComputerMagasinet <br>
+                Computer gade 65, 2. tv <br>
+                8000 Århus C <br>
+                Danmark <br>
+                Tlf. 12 34 56 78
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
